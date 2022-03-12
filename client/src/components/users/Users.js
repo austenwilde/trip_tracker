@@ -22,14 +22,14 @@ const Users = () => {
       .catch( err => console.log(err) )
   }
 
-  const updateSub = (id, user) => {
+  const updateUser = (id, user) => {
     axios.put(`/api/users/${id}`, { user })
       .then( res => {
         const newUpdatedUsers = users.map( u => {
           if (u.id === id) {
             return res.data
           }
-          return s
+          return u
         })
         setUsers(newUpdatedUsers)
       })

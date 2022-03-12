@@ -25,7 +25,6 @@ const LocationForm = ({ addLocation, id, name, body, updateLocation, setEdit }) 
       <form onSubmit={handleSubmit}>
         <label>Name:</label>
         <input
-          // type="number"
           name="name" 
           value={location.name}
           onChange={(e) => setLocation({ ...location, name: e.target.value })}

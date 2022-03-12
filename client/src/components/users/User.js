@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import UserForm from './UserForm';
-// import Trips from '../trips/Trips';
-// import Locations from '../locations/Locations'
+import Trips from '../trips/Trips';
+import Locations from '../locations/Locations'
 import { Link } from 'react-router-dom';
 
 const User = ({ id, name, email, password, updateUser, deleteUser }) => {
